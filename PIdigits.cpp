@@ -12,21 +12,21 @@ Enter a number and have the program generate PI up to that many decimal places. 
 #include <iostream>
 
 int main() {
-    int givenNum = 0;
+    int decimals = 0;
 
     std::cout << "How many decimals places of PI do you want? (Max 100): ";
-    std::cin >> givenNum;
+    std::cin >> decimals;
 
     if (!std::cin) //Input must be an integer
         std::cout << "Wrong input!";
-    else if (givenNum >= 0 && givenNum <= 100) {
-        givenNum += 1;
-        std::cout.precision(givenNum);
+    else if (decimals >= 0 && decimals <= 100) {
+        decimals += 1;
+        std::cout.precision(decimals);
         std::cout << PI << "\n";
     }
-    else if (givenNum < 0)
+    else if (decimals < 0)
         std::cout << "Must be positive number!\n";
-    else if (givenNum > 100) {
+    else if (decimals > 100) {
         std::cout.precision(101);
         std::cout << PI << "\n";
     }
