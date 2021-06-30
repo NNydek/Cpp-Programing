@@ -1,5 +1,5 @@
 /*
-Created by: Pawe³ Wyszyñski
+Created by: Pawel Wyszynski
 Date: 30.06.2021
 
 Find PI to the Nth Digit
